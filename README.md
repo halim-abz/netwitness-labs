@@ -13,8 +13,8 @@ This repository acts as a central hub for field-created content, scripts, and in
 
 | Directory | Description |
 | :--- | :--- |
-| **[`01-integrations/`](01-integrations/)** | Integrations with 3rd party tools and systems. |
-| **[`02-content/`](02-content/)** | Custom NetWitness content, such as log parsers, network parsers, application rules, ESA rules. |
+| **[`01-content/`](01-content/)** | Custom NetWitness content, such as log parsers, network parsers, application rules, ESA rules. |
+| **[`02-integrations/`](02-integrations/)** | Integrations with 3rd party tools and systems. |
 | **[`03-utilities/`](03-utilities/)** | Health check scripts, migration tools, and admin helpers. |
 | **[`04-threat-hunting/`](04-threat-hunting/)** | Sample queries for threat hunting. |
 | **[`99-other/`](99-other/)** | Uncategorized content. |
