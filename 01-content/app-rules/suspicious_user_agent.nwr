@@ -1,0 +1,1 @@
+name="suspicious user agent" rule="client contains 'Moxilla','test','sample','pwn','mozila','user-agent','exploit','hack' || client begins 'asd'" alert=ioc order=1 type=application
