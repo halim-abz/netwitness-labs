@@ -9,21 +9,21 @@
 ## Queries
 
 **Suspiciously long hostnames**
->service = 53,80 && length(domain) > 60 && direction = 'outbound'
+> `service = 53,80 && length(domain) > 60 && direction = 'outbound'`
 
 **6 or more subdomains**
->alias.host regex '([\\\\.].*){6,}'
+> `alias.host regex '([\\\\.].*){6,}'`
 
 **Large Subdomains**
->alias.host regex '([^\\\\.]){30,}.'
+> `alias.host regex '([^\\\\.]){30,}.'`
 
 **non-alphanumerical domain**
->service = 80,443,53 && alias.host regex '[^a-zA-Z0-9.\\\-_]'
+> `service = 80,443,53 && alias.host regex '[^a-zA-Z0-9.\\\-_]'`
 
 **Mixed upper and lower case domains for outbound traffic**
 Humans don't tend to type domain names with both upper and lower case (expect for the 1st letter due to autocorrect on mobile phones).
->alias.host regex '(?-i)[a-z][A-Z]' && (direction='outbound' || service = 53)
+> `alias.host regex '(?-i)[a-z][A-Z]' && (direction='outbound' || service = 53)`
 
 **Failed DNS Resolutions**
 Look for many failed DNS resolutions to many different unique domains from the same source IP (could be related to DGA attack). Exclude local domains.
->service = 53 && dns_querytype = 'a record' && error = 'no name' && tld != 'local','lan'
+> `service = 53 && dns_querytype = 'a record' && error = 'no name' && tld != 'local','lan'`
