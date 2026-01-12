@@ -144,7 +144,7 @@ Rune the bellow command to make it accessible over http://mcp_server_ip:8811/mcp
 ---
 
 ### **Section 2:** Application Configuration (Optional/Examples)
-This section goes through sample configurations for some common applications.
+This section goes through sample configurations for some common applications to use the MCP server.
 
 #### A. Configure Claude Desktop (Local)
 To connect the Claude application to the running MCP Server when both are running on the same host.
