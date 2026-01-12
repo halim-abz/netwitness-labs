@@ -6,7 +6,7 @@
 
 This repository acts as a central hub for field-created content, scripts, and integrations created by the wider community.
 
-> **⚠️ IMPORTANT:** This content is **not officially supported** by NetWitness Support.
+> **⚠️ IMPORTANT:** This content is **not officially supported** by NetWitness Support. Please review the [DISCLAIMER](DISCLAIMER.md) before using any content found here.
 
 
 ## 📂 Repository Structure
