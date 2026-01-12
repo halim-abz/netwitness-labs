@@ -2,7 +2,7 @@
 
 Helper scripts for NetWitness Administrators.
 
-## 🛠️ Tools Included
+## 📂 Contents
 
 * **Health Checks:** Scripts to verify service status, disk usage, or capture appliance metrics.
 
