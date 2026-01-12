@@ -2,7 +2,7 @@
 
 This directory contains the core content for the NetWitness Platform.
 
-## 📂 Structure
+## 📂 Contents
 
 * **`log-parsers/`**: Log parsers for Log Decoders.
 * **`network-parsers/`**: Lua parsers for Network Decoders.
