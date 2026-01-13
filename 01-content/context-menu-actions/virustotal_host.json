@@ -24,7 +24,7 @@
         "host.all"
     ],
     "disabled": false,
-    "id": "Id-1740425373559",
+    "id": "vt1LookupAction",
     "moduleClasses": [
         "UAP.investigation.navigate.view.NavigationPanel",
         "UAP.investigation.reconstruction.view.content.ReconstructedEventDataGrid",
