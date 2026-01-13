@@ -32,7 +32,7 @@
         "alias.ip"
     ],
     "disabled": false,
-    "id": "Id-1715926539206",
+    "id": "shodanLookupAction",
     "moduleClasses": [
         "UAP.investigation.navigate.view.NavigationPanel",
         "UAP.investigation.analysis.view.EventAnalysisPanel",
