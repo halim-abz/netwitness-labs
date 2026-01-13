@@ -26,18 +26,17 @@ netwitness-mcp-server/
 ```
 ---
 ## 🛠️ Installation & Setup
-This guide provides the steps to build, configure, and run the NetWitness MCP Server Docker image, and outlines the required configuration for related applications like Claude Desktop and Gemini CLI.
+This guide provides the steps to build, configure, and run the NetWitness MCP Server Docker image.
 This guide assumes that Docker Desktop is already installed.
 
-### **Section 1:** NetWitness MCP Server Docker Setup
-#### 1. Build the Docker Image
+### 1. Build the Docker Image
 Navigate to the server directory and build the Docker image locally.
 ```
 cd netwitness-mcp-server
 docker build -t netwitness-mcp-server .
 ```
 
-#### 2. Configure Environment Variables (Secrets)
+### 2. Configure Environment Variables (Secrets)
 Set the required credentials and the NetWitness API URL using Docker MCP secrets.
 **NOTE:** Change the IP address and Port for your specific NetWitness environment. Common ports: Concentrator (50105), Broker (50103).
 ```
@@ -49,7 +48,7 @@ docker mcp secret set NW_ADMIN_USERNAME="admin"
 docker mcp secret set NW_ADMIN_PASSWORD="netwitness"
 ```
 
-#### 3. Configure Docker Registry
+### 3. Configure Docker Registry
 Append the below content to the Docker MCP's **registry.yaml**
   - Windows: `c:\Users\[user]\.docker\mcp\registry.yaml`
   - Linux: `~/.docker/mcp/registry.yaml`
@@ -60,7 +59,7 @@ registry:
     ref: ""
 ```
 
-#### 4. Configure Docker MCP Custom Catalog
+### 4. Configure Docker MCP Custom Catalog
 Append the below content to the Docker's **custom.yaml** file
   - Windows: `c:\Users\[user]\.docker\mcp\catalogs\custom.yaml`
   - Linux: `~/.docker/mcp/catalogs/custom.yaml`
@@ -118,7 +117,7 @@ registry:
       owner: local
 ```
 
-#### 5. Make the MCP Server Accessible Remotely (Optional)
+### 5. Make the MCP Server Accessible Remotely (Optional)
 This is required if the application that needs to access the MCP server is not on the same host.
 To make the MCP Server accessible remotely, you must run an MCP Gateway.
 Rune the bellow command to make it accessible over _http://mcp_server_ip:8811/mcp_
@@ -143,10 +142,10 @@ Rune the bellow command to make it accessible over _http://mcp_server_ip:8811/mc
 
 ---
 
-### **Section 2:** Application Configuration (Optional/Examples)
-This section goes through sample configurations for some common applications to use the MCP server.
+## 🛠️ Setup Client Applications
+This section outlines sample required configurations for related applications like Claude Desktop and Gemini CLI to use the MCP server.
 
-#### A. Configure Claude Desktop (Local)
+### A. Configure Claude Desktop (Local)
 To connect the Claude application to the running MCP Server when both are running on the same host.
 
 1. Copy Config File:
@@ -180,7 +179,7 @@ Make sure to replace the placeholder **_[YOUR_HOME]_** directory with the approp
 }
 ```
 
-#### B. Configure Claude Desktop (Remote)
+### B. Configure Claude Desktop (Remote)
 To connect the Claude application to the running MCP Server when both are running on separate hosts.
 
 1. Install **Node.js**:
@@ -204,10 +203,10 @@ Use the following JSON structure for your **claude_desktop_config.json** file, a
 }
 ```
 
-#### C. Configure Gemini CLI
+### C. Configure Gemini CLI
 Similar to the Claude configuration, but copy the content of the JSON configuration file into the Gemini CLI settings JSON file: `[Home]\.gemini\settings.json`
 
-#### D. Configure n8n.io
+### D. Configure n8n.io
 To use the MCP Server within an n8n automation/AI Agent/AI Workflow.
 
 - Add an **AI Agent**
@@ -217,7 +216,7 @@ To use the MCP Server within an n8n automation/AI Agent/AI Workflow.
 - Server Transport: **HTTP Streamable**
 - Authentication: **None**
 
-### 6. Reload Config
+### E. Reload Config
 For configuration changes to take effect, completely close and then re-open the application (Claude Desktop or Gemini CLI).
 
 ---
