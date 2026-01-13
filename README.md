@@ -25,7 +25,7 @@ This repository acts as a central hub for field-created content, scripts, and in
 
 1.  **Browse** the folders above to find the content you need.
 2.  **Read** the specific `README.md` inside that folder for installation instructions.
-3.  **Test** the content in a non-production environment (e.g., a Lab or Test Vlancs).
+3.  **Test** the content in a non-production environment.
 
 
 ## 🤝 Contributing
