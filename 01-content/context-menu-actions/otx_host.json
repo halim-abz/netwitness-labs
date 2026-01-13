@@ -1,0 +1,39 @@
+{
+    "displayName": "OTX - Domain",
+    "cssClasses": [
+        "alias-host",
+        "alias.host",
+        "alias_host",
+        "domain-dst",
+        "domain-src",
+        "domain.dst",
+        "domain.src",
+        "domain_dst",
+        "domain_src"
+    ],
+    "description": "AlienVault OTX Domain Lookup",
+    "type": "UAP.common.contextmenu.actions.URLContextAction",
+    "version": "CUSTOM",
+    "modules": [
+        "investigation"
+    ],
+    "local": "false",
+    "path": "context-actions",
+    "groupName": "External Lookup",
+    "urlFormat": "https://otx.alienvault.com/indicator/domain/{0}",
+    "provider": "User",
+    "scope": [
+        "alias.host",
+        "domain.src",
+        "domain.dst"
+    ],
+    "disabled": false,
+    "id": "otx2LookupAction",
+    "moduleClasses": [
+        "UAP.investigation.navigate.view.NavigationPanel",
+        "UAP.investigation.reconstruction.view.content.ReconstructedEventDataGrid",
+        "UAP.investigation.analysis.view.EventAnalysisPanel"
+    ],
+    "openInNewTab": true,
+    "order": ""
+}
