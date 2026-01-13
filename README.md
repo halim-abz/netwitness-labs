@@ -17,7 +17,7 @@ This repository acts as a central hub for field-created content, scripts, and in
 | **[`02-integrations/`](02-integrations/)** | Integrations with 3rd party tools and systems. |
 | **[`03-utilities/`](03-utilities/)** | Health check scripts, migration tools, and admin helpers. |
 | **[`04-threat-hunting/`](04-threat-hunting/)** | Sample queries for threat hunting. |
-| **[`05-ai-llm/`](05-ai-llm/)** | **AI & GenAI:** Model Context Protocol (MCP) servers, Custom GPTs, and LLM connectors. |
+| **[`05-ai-llm/`](05-ai-llm/)** | AI & GenAI: Model Context Protocol (MCP) servers, Custom GPTs, and LLM connectors. |
 | **[`99-other/`](99-other/)** | Uncategorized content. |
 
 
