@@ -27,7 +27,7 @@ Since these are "Labs" rules, they are not available in NetWitness Live. You mus
 
 ---
 
-## 📂 Contents
+## 📂 Application Rules
 
 | Rule Name | Data | Rule Description |
 | :--- | :--- | :--- |
