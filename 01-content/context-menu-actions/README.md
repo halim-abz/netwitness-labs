@@ -44,7 +44,7 @@ When you configure a Context Menu Action to an external site (like `google.com` 
 
 | Name | Description |
 | :--- | :--- |
-| **[`Shodan`](shodan.json/)** | Query IPs and Domains on Shodan |
 | **[`Talos`](talos.json/)** | Query IPs and Domains on Cisco Talos |
+| **[`Shodan`](shodan.json/)** | Query IPs on Shodan |
 | **[`VirusTotal_IP`](virustotal_ip.json/)** | Query IPs on VirusTotal |
 | **[`VirusTotal_Host`](virustotal_host.json/)** | Query Domains on VirusTotal |
