@@ -48,3 +48,5 @@ When you configure a Context Menu Action to an external site (like `google.com` 
 | **[`Shodan`](shodan.json/)** | Query IPs on Shodan |
 | **[`VirusTotal_IP`](virustotal_ip.json/)** | Query IPs on VirusTotal |
 | **[`VirusTotal_Host`](virustotal_host.json/)** | Query Domains on VirusTotal |
+| **[`OTX_IP`](otx_ip.json/)** | Query IPs on AlienVault OTX |
+| **[`OTX_Host`](otx_host.json/)** | Query Domains on AlienVault OTX |
