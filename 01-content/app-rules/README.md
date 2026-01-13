@@ -29,7 +29,7 @@ Since these are "Labs" rules, they are not available in NetWitness Live. You mus
 
 ## 📂 Contents
 
-| Type | Data | Description |
+| Rule Name | Data | Rule Description |
 | :--- | :--- | :--- |
 | **[`large subdomain`](large_subdomain.nwr/)** | Logs, Network | Identifies long subdomains that have more than 30 characters. Attackers can exfiltrate data, send/receive commands … via the subdomain. Each subdomain can have a maximum of 63 characters with a total maximum record size of 253 characters. |
 | **[`six or more subdomains`](six_or_more_subdomains.nwr/)** | Logs, Network | Identifies alias.host with 6 or more subdomains. Attackers can exfiltrate data, send/receive commands … via the subdomain. Each subdomain can have a maximum of 63 characters with a total maximum record size of 253 characters. |
