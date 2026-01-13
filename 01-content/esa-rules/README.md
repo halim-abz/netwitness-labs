@@ -33,3 +33,12 @@ Since these rules are not part of the official Live content, you must create or 
 **Golden Rules for "Labs" Content:**
 1.  **Test in Trial Mode:** When you first deploy a new rule, set its status to "Trial" or just monitor the alert output.
 2.  **Watch Memory:** Monitor the ESA service memory usage after deploying complex rules.
+
+---
+
+## 📂 Contents
+
+| Rule Name | Data | Rule Description | Att&ck ID | Tactic | Technique |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **[`Attachment with Macro Enabled Office Document`](Attachment_with_Macro_Enabled_Office_Document/)** | Network | Adversaries may attach Macro enabled office documents, which would allow to execute code on the victim's machine once opened. | T1566.001 | Initial Access | Phishing |
+| **[`Kerberos Account Scanning`](Kerberos_Account_Scanning/)** | Network | Detects when multiple authentication attempts over Kerberos for X number of different usernames that don't exist are seen within Y seconds. | T1087 | Discovery | Account Discovery |
