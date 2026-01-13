@@ -9,3 +9,4 @@ This directory contains the core content for the NetWitness Platform.
 * **[`app-rules/`](app-rules/)**: Application Rules for metadata tagging.
 * **[`esa-rules/`](esa-rules/)**: Event Stream Analysis (correlation) rules.
 * **[`feeds/`](feeds/)**: Enrichment feeds.
+* **[`context-menu-actions/`](context-menu-actions/)**: Custom Context Menu Actions (Right-Click External Lookups)
