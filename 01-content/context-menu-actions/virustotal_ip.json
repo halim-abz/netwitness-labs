@@ -32,7 +32,7 @@
         "ip.all"
     ],
     "disabled": false,
-    "id": "Id-1715926645277",
+    "id": "vt2LookupAction",
     "moduleClasses": [
         "UAP.investigation.navigate.view.NavigationPanel",
         "UAP.investigation.reconstruction.view.content.ReconstructedEventDataGrid",
