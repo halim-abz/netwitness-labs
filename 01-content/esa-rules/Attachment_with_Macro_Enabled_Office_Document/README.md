@@ -27,10 +27,10 @@ Ensure the following is available:
 
 **IMPORTANT:** The below can be a breaking change if you have other ESA rules that do not expect the "filename" meta key to be an array. Make sure to update other ESA rules you may have that do not consider "filename" as an array.
 
-For better accuracy, you can change the Meta Key Type for "filename" from "string" to String[]":
+For better accuracy, you can change the Meta Key Type for `filename` from `string` to `String[]`:
 1. Go to Admin > Services ESA Correlation > Explore
 2. Click on correlation > stream
-3. Under "multi-valued" add ',filename' to the end of the list
+3. Under "multi-valued" add `,filename` to the end of the list
 4. Navigate to Config > ESA Rules > Settings > Meta Key References
 5. Click on the red "Re-Sync" button (circular arrows)
 6- Verify that "filename" now shows as type "string[]"
